@@ -16,7 +16,7 @@ const SignUp = () => {
     <section className="container flex flex-col items-center justify-center h-screen gap-8">
       <div className="max-w-sm flex items-center justify-center flex-col">
         <img
-          className="rounded-full w-20 h-20 mb-4"
+          className="rounded-full w-24 h-24 mb-4"
           src={zagoalLogo}
           alt="zagoal-logo"
         />
