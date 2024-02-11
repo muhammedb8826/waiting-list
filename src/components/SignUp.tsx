@@ -28,7 +28,8 @@ const SignUp = () => {
           </span>
         </h1>
       </div>
-      <form action="" onSubmit={handleSubmit} className="flex items-center justify-center w-full md:w-1/2 gap-1">
+      <form action="" onSubmit={handleSubmit} className="w-full">
+        <div className="sm:flex items-center justify-between md:w-[75%] lg:w-1/2 mx-auto p-4 gap-1">
         <div className="flex-1">
           <input
           onChange={handleChange}
@@ -39,12 +40,15 @@ const SignUp = () => {
             required
           />
         </div>
+        <div className="w-[30%] max-sm:w-full max-sm:mt-4">
         <button
-          type="submit"
-          className="w-[25%] bg-[#F4F4F4] hover:bg-[#D3D3D3] focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 border border-[#D3D3D3]"
+            type="submit"
+            className="w-full bg-[#F4F4F4] hover:bg-[#D3D3D3] focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-2 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 border border-[#D3D3D3]"
         >
-          Get early access
+            Get early access
         </button>
+        </div>
+        </div>
       </form>
       <div>
         <NavLink to="#" className="flex items-center gap-4">Watch the video <span className="p-4 rounded-full border border-black"><FaAngleRight /></span> </NavLink>
