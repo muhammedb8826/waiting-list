@@ -15,6 +15,7 @@ function App() {
   <Route path="/zipcode" element={<ZipCode />} />
   <Route path="/first-name" element={<FirstNameForm />} />
   <Route path="/points" element={<PointsList/>}/>
+  <Route path="*" element={<h1>Not Found</h1>} />
 </Routes>
 </main>
   )
